@@ -1,49 +1,39 @@
 Overview
-The project includes the following components:
 
-Data Loading and Preprocessing: Load a dataset and prepare it for training.
-Model Training: Train a Random Forest Classifier on the dataset.
-Model Evaluation: Evaluate the model's performance and display feature importances.
-Image Visualization: Display images related to the space weather data.
-Requirements
-Python 3.x
-pandas
-scikit-learn
-matplotlib
-Pillow
-You can install the required libraries using pip:
+The project includes the following components:-
+1. Data Loading and Preprocessing: Load a dataset and prepare it for training.
+2. Model Training: Train a Random Forest Classifier on the dataset.
+3. Model Evaluation: Evaluate the model's performance and display feature importances.
+4. Image Visualization: Display images related to the space weather data.
 
-bash
-Copy code
-pip install pandas scikit-learn matplotlib pillow
-Usage
+Requirements:-
+1. Python 3.x
+2. pandas
+3. scikit-learn
+4. matplotlib
+5. Pillow
+You can install the required libraries using pip
+
 Prepare Your Dataset
+Make sure you have a dataset named space_weather_data.csv with the following columns:-
+1. solar_wind_speed
+2. proton_density
+3. magnetic_field_strength
+4. event_occurred (label)
 
-Make sure you have a dataset named space_weather_data.csv with the following columns:
+Review the Outputs:-
+1. Model Performance: The script will output the accuracy and a classification report of the model.
+2. Feature Importances: It will also print the importance of each feature used by the model.
+3. Image Visualizations: The script will display images related to space weather (replace image paths as needed).
 
-solar_wind_speed
-proton_density
-magnetic_field_strength
-event_occurred (label)
-Run the Script
+Script Details:-
+1. Data Loading: The dataset is loaded using pandas.
+2. Model Training: A Random Forest Classifier from scikit-learn is used.
+3. Evaluation: Model accuracy and classification report are printed.
+4. Feature Importance: Displays the importance of each feature.
+5. Image Visualization: Uses matplotlib and Pillow to display images.
 
-Execute the script to train the model and visualize the results:
-
-bash
-Copy code
-python your_script_name.py
-Review the Outputs
-
-Model Performance: The script will output the accuracy and a classification report of the model.
-Feature Importances: It will also print the importance of each feature used by the model.
-Image Visualizations: The script will display images related to space weather (replace image paths as needed).
-Script Details
-Data Loading: The dataset is loaded using pandas.
-Model Training: A Random Forest Classifier from scikit-learn is used.
-Evaluation: Model accuracy and classification report are printed.
-Feature Importance: Displays the importance of each feature.
-Image Visualization: Uses matplotlib and Pillow to display images.
-Images
-mag.png - Replace with your image file related to magnetic field strength.
-solar.png - Replace with your image file related to solar wind speed.
-proton.png - Replace with your image file related to proton density.
+Images:-
+1. mag.png - Replace with your image file related to magnetic field strength.
+2. solar.png - Replace with your image file related to solar wind speed.
+3. proton.png - Replace with your image file related to proton density.
